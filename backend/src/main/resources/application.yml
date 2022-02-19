@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/demo
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa.hibernate:
+    ddl-auto: validate
+  jpa:
+    properties:
+      format_sql: true
+      dialect: org.hibernate.dialect.H2Dialec
+    show-sql: true
